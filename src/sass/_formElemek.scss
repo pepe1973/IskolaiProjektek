@@ -1,0 +1,43 @@
+form {
+    margin-bottom: 1em;
+}
+
+input {
+    background-color: white;
+    border: 1px solid $input;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    height: 2.5em;
+    font-size: 1em;
+}
+
+select {
+    border: 1px solid $input;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    height: 2.5em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    outline: none;
+    width: 200px;
+}
+
+button {
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    height: 2em;
+    margin-bottom: 1em;
+    padding: 5px;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    accent-color: rgb(0, 211, 0);
+    height: 13px;
+    margin-top: 15px;
+    margin-right: 5px;
+}

@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'idek';
+@import 'osztalyok';
+@import 'nav';
+@import 'container';
+@import 'belsoContainer';
+@import 'valasz';
+@import 'tarto';
+@import 'kep';
+@import 'gombok';
+@import 'formElemek';
+@import 'tablazat';
+
+* {
+    // border: 1px solid yellow;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $bodySzurke;
+    color: $fustFeher;
+    font-family: $poppins;
+}
+
+a {
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+    color: $fustFeher;
+    padding-right: 1em;
+}
+
+@import 'media';

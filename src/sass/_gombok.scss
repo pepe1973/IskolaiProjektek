@@ -1,0 +1,30 @@
+#felso-gombok {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+
+    button {
+        background-color: $felsoButton;
+        box-shadow: 2px 2px 2px black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 1.5em;
+        padding: 5px;
+    }
+}
+
+#also-gombok {
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+
+    button {
+        background-color: $alsoButton;
+        box-shadow: 2px 2px 2px black;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 1em;
+        padding: 5px;
+    }
+}

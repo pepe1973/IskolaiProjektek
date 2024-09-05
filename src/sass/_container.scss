@@ -1,0 +1,43 @@
+.container {
+    background-color: $containerSzurke;
+    border-radius: 10px;
+    padding: 1em 1em;
+    position: relative;
+    margin: 0vh auto 1em;
+    width: 80%;
+
+    &::before {
+        background-image: linear-gradient(to right, red, blue);
+        border-radius: 10px;
+        content: '';
+        height: calc(100% + 10px);
+        left: -5px;
+        position: absolute;
+        top: -5px;
+        width: calc(100% + 10px);
+        z-index: -1;
+    }
+
+    h1,
+    h2 {
+        padding: 0.5em;
+    }
+
+    ol {
+        list-style-type: none;
+
+        li {
+            background-color: $liSzurke;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px #000;
+            margin-bottom: 0.5em;
+
+            a {
+                color: $fustFeher;
+                display: inline-block;
+                padding: 0.5em;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-function checkBeir(tomb, j) {
+function radioBeir(tomb, j) {
     let szoveg = `<div id="elsoCheck">`;
     szoveg = `<div id="felso-gombok">`;
     szoveg += `<button onclick="elozo(${j - 1})">Előző</button>`;
@@ -8,11 +8,13 @@ function checkBeir(tomb, j) {
     szoveg += `<div id="tartalom">`;
     szoveg += `<h3>${j + 1}. ${tomb[j].kerdes}</h3>`;
     if (tomb[0].kep !== '') {
+        szoveg += `<div class="kep">`;
         szoveg += `<img src="${tomb[j].kep}" />`;
+        szoveg += `</div>`;
     }
     szoveg += `<form>`;
     for (let i = 0; i < tomb[j].valaszok.length; i++) {
-        szoveg += `<input type="checkbox" id="${i}">
+        szoveg += `<input type="radio" id="${i}" name="${tomb[j].kerdes}">
 		<label for="${i}">${tomb[j].valaszok[i]}</label><br>`;
     }
     szoveg += `</form>`;
@@ -22,7 +24,7 @@ function checkBeir(tomb, j) {
     szoveg += `<button style="display: none" onclick="elrejtes()" id="elrejtes">Elrejtés</button>`;
     szoveg += `</div>`;
     szoveg += `<div id="jo-valaszok">`;
-    szoveg += `<h4>Helyes Válaszok</h4>`;
+    szoveg += `<h4>Helyes Válasz</h4>`;
     szoveg += '<ul>';
     for (let i = 0; i < tomb[j].helyesValaszok.length; i++) {
         szoveg += `<li>${tomb[j].helyesValaszok[i]}</li>`;

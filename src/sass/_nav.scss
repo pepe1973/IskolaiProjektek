@@ -1,0 +1,17 @@
+nav {
+    align-items: center;
+    background-color: $navSzurke;
+    display: flex;
+    font-size: 2em;
+    height: 7vh;
+    justify-content: space-between;
+    padding-left: 1em;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+
+    a {
+        color: $fustFeher;
+    }
+}

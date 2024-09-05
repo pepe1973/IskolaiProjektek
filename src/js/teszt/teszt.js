@@ -1,4 +1,4 @@
-let tartoElem = document.getElementsByClassName('tarto');
+let tartoElem = document.getElementsByClassName('valasz');
 
 if (kerdesekEsValaszok[0].tipus === 'check') {
     tartoElem[0].innerHTML = elsoCheckBeir(kerdesekEsValaszok);

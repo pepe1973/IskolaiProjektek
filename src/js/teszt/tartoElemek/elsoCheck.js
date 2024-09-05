@@ -1,20 +1,21 @@
-function utolsoCheckBeir(tomb) {
-    let utolso = tomb.length - 1;
+function elsoCheckBeir(tomb) {
     let szoveg = `<div id="elsoCheck">`;
     szoveg = `<div id="felso-gombok">`;
-    szoveg += `<button onclick="elozo(${utolso - 1})">Előző</button>`;
-    szoveg += `<button style="visibility: hidden">Következő</button>`;
+    szoveg += `<button style="visibility: hidden">Előző</button>`;
+    szoveg += `<button onclick="kovetkezo(1)">Következő</button>`;
     szoveg += `</button>`;
     szoveg += `</div>`;
     szoveg += `<div id="tartalom">`;
-    szoveg += `<h3>${utolso + 1}. ${tomb[utolso].kerdes}</h3>`;
-    if (tomb[utolso].kep !== '') {
-        szoveg += `<img src="${tomb[utolso].kep}" />`;
+    szoveg += `<h3>1. ${tomb[0].kerdes}</h3>`;
+    if (tomb[0].kep !== '') {
+        szoveg += `<div class="kep">`;
+        szoveg += `<img src="${tomb[0].kep}" />`;
+        szoveg += `</div>`;
     }
     szoveg += `<form>`;
-    for (let i = 0; i < tomb[utolso].valaszok.length; i++) {
+    for (let i = 0; i < tomb[0].valaszok.length; i++) {
         szoveg += `<input type="checkbox" id="${i}">
-		<label for="${i}">${tomb[utolso].valaszok[i]}</label><br>`;
+		<label for="${i}">${tomb[0].valaszok[i]}</label><br>`;
     }
     szoveg += `</form>`;
     szoveg += `</div>`;
@@ -25,8 +26,8 @@ function utolsoCheckBeir(tomb) {
     szoveg += `<div id="jo-valaszok">`;
     szoveg += `<h4>Helyes Válaszok</h4>`;
     szoveg += '<ul>';
-    for (let i = 0; i < tomb[utolso].helyesValaszok.length; i++) {
-        szoveg += `<li>${tomb[utolso].helyesValaszok[i]}</li>`;
+    for (let i = 0; i < tomb[0].helyesValaszok.length; i++) {
+        szoveg += `<li>${tomb[0].helyesValaszok[i]}</li>`;
     }
     szoveg += '</ul>';
     szoveg += `</div>`;

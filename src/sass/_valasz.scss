@@ -1,0 +1,54 @@
+.valasz {
+    /* background-color: #cc0303; */
+    background-color: $valaszSzurke;
+    border-radius: 3px;
+    margin: 0.5em 0px;
+    padding: 0.5em;
+
+    p {
+        border-radius: 3px;
+        margin-top: 0.5em;
+        text-align: justify;
+
+        &:nth-of-type(even) {
+            background-color: $parosP;
+        }
+
+        &:nth-of-type(odd) {
+            background-color: $paratlanP;
+        }
+
+        a {
+            color: $valaszKek;
+            display: inline-block;
+            padding: 0.5em;
+            width: 100%;
+        }
+    }
+
+    h3 {
+        padding: 0.5em;
+    }
+
+    dl {
+        color: #000;
+        border-radius: 3px;
+        margin-top: 0.5em;
+        padding: 0.5em;
+        text-align: justify;
+
+        dt {
+            background-color: $valaszDtSzurke;
+            border-radius: 2px;
+            margin-bottom: 5px;
+            padding: 0.5em;
+
+            a {
+                color: $valaszDtLink;
+                display: inline-block;
+                padding: 0.2em;
+                width: 100%;
+            }
+        }
+    }
+}

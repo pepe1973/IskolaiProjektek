@@ -1,0 +1,33 @@
+@media screen and (max-width: 1300px) {
+    #gyakorlo {
+        display: block;
+        min-height: 88vh;
+    }
+
+    #bal-keret {
+        width: 100%;
+    }
+
+    #jobb-keret {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 95%;
+        margin: 0vh auto 1em;
+    }
+
+    .kep {
+        width: 100%;
+    }
+
+    .tarto img {
+        max-width: 100%;
+    }
+
+    .hosszu {
+        overflow: auto;
+    }
+}

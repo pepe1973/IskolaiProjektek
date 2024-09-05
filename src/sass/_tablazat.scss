@@ -1,0 +1,11 @@
+td {
+    height: 3em;
+
+    &:nth-child(3) {
+        width: 300px;
+
+        input {
+            width: 300px;
+        }
+    }
+}

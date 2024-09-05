@@ -1,0 +1,54 @@
+.link-nelkul {
+    p {
+        padding: 0.5em;
+    }
+}
+
+.feladat {
+    background-color: $forrasKek;
+    /* background-color: #3f3f3f; */
+    border-radius: 3px;
+    margin: 0.5em 0px;
+    padding: 0.5em;
+}
+
+.forras {
+    background-color: $forrasKek;
+    /* background-color: #3f3f3f; */
+    border-radius: 3px;
+    margin: 0.5em 0px;
+    padding: 0.5em;
+
+    a {
+        color: $fustFeher;
+    }
+}
+
+.feladat {
+    p {
+        text-align: justify;
+    }
+}
+
+.feladat-lista {
+    text-decoration: underline;
+}
+
+.keret {
+    border: 1px solid $keretSzurke;
+    height: 200px;
+    width: 200px;
+}
+
+.torles {
+    align-items: center;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+
+    button {
+        height: 40px;
+        margin-bottom: 0px;
+        padding: 5px;
+    }
+}
